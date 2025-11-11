@@ -48,28 +48,28 @@ export default function Navbar() {
             <div className="max-w-7xl mx-auto flex items-center justify-between px-6 md:px-10">
                 {/* Brand */}
                 <div className="flex items-center">
-                    <h1 className="text-2xl font-bold text-gray-800 tracking-wide">
-                        Naavya <span className="text-indigo-600">Creations</span>
+                    <h1 className="text-2xl font-bold tracking-wide">
+                        Naavya <span className="text-[#83C5BE]">Creations</span>
                     </h1>
                 </div>
 
                 {/* Desktop Links */}
                 <div className="hidden md:flex items-center space-x-10 text-gray-700 font-medium">
-                    <a href="#" className="hover:text-indigo-600 transition-colors">
+                    <a href="#Home" className="hover:text-[#83C5BE] transition-colors">
                         Home
                     </a>
-                    <a href="#" className="hover:text-indigo-600 transition-colors">
+                    <a href="#" className="hover:text-[#83C5BE] transition-colors">
                         Products
                     </a>
-                    <a href="#" className="hover:text-indigo-600 transition-colors">
+                    <a href="#" className="hover:text-[#83C5BE] transition-colors">
                         Contact Us
                     </a>
                 </div>
 
                 {/* Icons + Mobile Toggle */}
-                <div className="flex items-center space-x-6 relative">
+                <div className="flex items-center space-x-3 md:space-x-6 relative">
                     {/* Cart */}
-                    <button className="hover:text-indigo-600 transition-colors">
+                    <button className="hover:text-[#83C5BE] transition-colors">
                         <ShoppingCart className="w-6 h-6" />
                     </button>
 
@@ -77,7 +77,7 @@ export default function Navbar() {
                     <div className="relative" ref={userMenuRef}>
                         <button
                             onClick={() => setUserMenuOpen((prev) => !prev)}
-                            className="hover:text-indigo-600 transition-colors"
+                            className="hover:text-[#83C5BE] transition-colors"
                         >
                             <User className="w-6 h-6" />
                         </button>
@@ -96,7 +96,7 @@ export default function Navbar() {
                                         <li>
                                             <a
                                                 href="#"
-                                                className="block px-4 py-2 hover:bg-indigo-50 hover:text-indigo-600 transition-colors"
+                                                className="block px-4 py-2 hover:bg-[#83C5BE] hover:text-[#fff] transition-colors"
                                             >
                                                 Admin
                                             </a>
@@ -104,7 +104,7 @@ export default function Navbar() {
                                         <li>
                                             <a
                                                 href="#"
-                                                className="block px-4 py-2 hover:bg-indigo-50 hover:text-indigo-600 transition-colors"
+                                                className="block px-4 py-2 hover:bg-[#83C5BE] hover:text-[#fff] transition-colors"
                                             >
                                                 Customer
                                             </a>
